@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flaticon WebFont</title>
+    <link rel="stylesheet" type="text/css" href="flaticon.css">
+    <meta charset="UTF-8">
+    <style>
+    body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        font-size: 16px;
+        padding: 20px;
+        color:#333;
+    }
+    * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-family: Flaticon;
+        font-size: 30px;
+        font-style: normal;
+        margin-left: 20px;
+        color: #333;
+    }
+    .image p {
+		font-size: 12px;
+		margin: 0px;
+		clear: none;
+		width: 300px;
+		line-height: 40px;
+	}
+    .text {
+        float: left;
+        font-size:14px;
+        margin-top: 15px;
+    }
+    .text ul {
+        margin-left:0px;
+        color:#111;
+        margin-bottom:20px;
+    }
+    .text .ex {
+        font-size:12px;
+        color:#666;
+        margin-left:35px;
+        display:block;
+    }
+    .text ul li {
+        margin-top:10px;
+        list-style:none;
+    }
+    .num {
+        background:#66A523;
+        color:#fff;
+        border-radius:20px;
+        padding:1px;
+        display:inline-block;
+        width:22px;
+        height:22px;
+        text-align:center;
+        margin-right: 5px;
+    }
+    .text ul strong {
+        font-weight:normal;
+        color:#000;
+    }
+    .image {
+        width: 280px;
+        float: left;
+        margin-bottom: 15px;
+        margin-right: 30px;
+    }
+    #glyphs {
+        clear: both;
+    }
+    .image p:nth-child(even) i {
+        clear: none;
+    }
+    .glyph {
+        display: inline-block;
+        width: 120px;
+        margin: 10px;
+        text-align: center;
+        vertical-align: top;
+        background: #FFF;
+    }
+    .glyph .glyph-icon {
+        padding: 10px;
+        display: block;
+        font-family:"Flaticon";
+        font-size: 64px;
+        line-height: 1;
+    }
+    .glyph .glyph-icon:before {
+        font-size: 64px;
+        color: #666;
+        margin-left: 0;
+    }
+    .class-name {
+        font-size: 12px;
+    }
+    .author-name {
+		font-size: 10px;
+	}
+	a{
+		color: #66A523;
+	}
+    .instructions {
+        font-style:italic;
+        font-size:22px;
+        margin-bottom:10px;
+    }
+    .iconsuse {
+        font-size:22px;
+        font-style:italic;
+        padding-top:20px;
+        margin-top:20px;
+        border-top:1px solid #bbb;
+    }
+    .usetitle {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-style: italic;
+    }
+    .class-name:last-child {
+        font-size: 10px;
+        color:#888;
+    }
+    .class-name:last-child a {
+        font-size: 10px;
+        color:#555;
+    }
+    .class-name:last-child a:hover {
+        color:#66A523;
+    }
+    .glyph > input {
+        display: block;
+        width: 100px;
+        margin: 5px auto;
+        text-align: center;
+        font-size: 12px;
+        cursor: text;
+    }
+    .glyph > input.icon-input {
+        font-family:"Flaticon";
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    h1.logo {
+        font-size: 40px;
+        letter-spacing: -1px;
+        margin-top: -16px;
+        text-transform: lowercase;
+        border-bottom:1px solid #bbb;
+    }
+    h1.logo strong {
+        font-size: 16px;
+        font-family:sans-serif;
+        font-weight:normal;
+        color:#333;
+    }
+    h1.logo a {
+        color:#34302d;
+        text-decoration: none;
+    }
+    h1.logo a span {
+        color:#66A523;
+    }
+    #footer {
+        padding-top:40px;
+        clear:both;
+        text-align:center;
+    }
+    #footer a {
+        color:#66A523;
+    }
+    textarea {
+		margin: 0px;
+		width: 800px;
+		height: 150px;
+		border: 1px solid #CCC;
+		resize: none;
+		background: #EEE;
+    }
+    .author-link, .attrDiv a{
+    	font-size: 12px;
+    	color: #333;
+    	text-decoration: none;
+    }
+    .external {
+    	display: block;
+    }
+    .attrDiv {
+		font-size: 12px;
+	}
+    .attribution {
+        border-top: 1px solid #AAA;
+        margin: 10px 0;
+        padding-top: 15px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">
+            <a href="http://www.flaticon.com">
+                <span>FLAT</span>ICON</a>
+            <strong>Font Demo</strong>
+        </h1>
+    </header>
+
+    <section class="demo">
+        <div class="text">
+
+            <div class="instructions">Instructions:</div>
+
+            <ul>
+                <li>
+                    <p>
+                        <span class="num">1</span>Copy the "Fonts" files and CSS files to your website CSS folder.
+                </li>
+                <li>
+                    <p>
+                        <span class="num">2</span>Add the CSS link to your website source code on header.
+                        <br />
+                        <span class="ex">&lt;head&gt;
+                            <br/>...
+                            <br/>&lt;link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css"&gt;
+                            <br/>...
+                            <br/>&lt;/head&gt;</span>
+                </li>
+
+                <li>
+                    <p>
+                        <span class="num">3</span>Use the icon class on "display:inline" elements:
+                        <br />
+                        <span class="ex">Use example: &lt;i class=&quot;flaticon-airplane49&quot;&gt;&lt;/i&gt; or &lt;span class=&quot;flaticon-airplane49&quot;&gt;&lt;/span&gt;</span>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="glyphs"><div class="glyph">
+		<div class="glyph-icon flaticon-apron1"></div>
+		<div class="class-name">.flaticon-apron1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/apron-silhouette_45543">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-big97"></div>
+		<div class="class-name">.flaticon-big97</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/big-food-container-with-cover_45655">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-black308"></div>
+		<div class="class-name">.flaticon-black308</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/black-wine-bottle-glass-shape_45348">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-black310"></div>
+		<div class="class-name">.flaticon-black310</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/black-glass-to-drink_45374">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-black311"></div>
+		<div class="class-name">.flaticon-black311</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/black-glass-side-view_45393">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-black313"></div>
+		<div class="class-name">.flaticon-black313</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/black-plate-side-view_45413">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-black315"></div>
+		<div class="class-name">.flaticon-black315</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/black-bottle-sauce-container_45489">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-black316"></div>
+		<div class="class-name">.flaticon-black316</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/black-glass_45492">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-black318"></div>
+		<div class="class-name">.flaticon-black318</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/black-elegant-drinking-glass-tool_45529">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-black323"></div>
+		<div class="class-name">.flaticon-black323</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/black-bottle_45617">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-black329"></div>
+		<div class="class-name">.flaticon-black329</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/black-glass-of-convex-sides_45743">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-boiler1"></div>
+		<div class="class-name">.flaticon-boiler1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/boiler-silhouette_45751">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-bowl10"></div>
+		<div class="class-name">.flaticon-bowl10</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/bowl_45234">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-bowl11"></div>
+		<div class="class-name">.flaticon-bowl11</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/bowl-or-flask-with-empty-label-for-kitchen-to-store-food_45244">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-bucket10"></div>
+		<div class="class-name">.flaticon-bucket10</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/bucket-for-vegetables-in-diagonal-position_45272">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-bucket11"></div>
+		<div class="class-name">.flaticon-bucket11</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/bucket-for-dessert_45415">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-bucket12"></div>
+		<div class="class-name">.flaticon-bucket12</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/bucket-tool_45738">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-bucket9"></div>
+		<div class="class-name">.flaticon-bucket9</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/bucket-for-tea_45267">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-buckets"></div>
+		<div class="class-name">.flaticon-buckets</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/buckets-kitchen-set_45476">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-champagne4"></div>
+		<div class="class-name">.flaticon-champagne4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/champagne-glass_45692">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chef14"></div>
+		<div class="class-name">.flaticon-chef14</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/chef-hat_45207">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chef15"></div>
+		<div class="class-name">.flaticon-chef15</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/chef-hat-on-a-plate-from-side-view_45287">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chef16"></div>
+		<div class="class-name">.flaticon-chef16</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/chef-hat-and-fork_45386">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chef17"></div>
+		<div class="class-name">.flaticon-chef17</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/chef-hat-with-cutlery-restaurant-symbol_45454">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chef18"></div>
+		<div class="class-name">.flaticon-chef18</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/chef-with-hat_45491">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chef19"></div>
+		<div class="class-name">.flaticon-chef19</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/chef-hat-outline-symbol_45582">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chef20"></div>
+		<div class="class-name">.flaticon-chef20</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/chef_45618">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chef21"></div>
+		<div class="class-name">.flaticon-chef21</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/chef-hat-and-a-spoon_45716">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chef22"></div>
+		<div class="class-name">.flaticon-chef22</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/chef-recipes-book_45728">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chinese13"></div>
+		<div class="class-name">.flaticon-chinese13</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/chinese-food-bowl-from-side-view-and-chopsticks_45302">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-chopsticks1"></div>
+		<div class="class-name">.flaticon-chopsticks1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/chopsticks-couple-in-cross_45320">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cloth3"></div>
+		<div class="class-name">.flaticon-cloth3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cloth-for-kitchen-rotated-square-or-label-for-commerce_45212">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-coffee46"></div>
+		<div class="class-name">.flaticon-coffee46</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/coffee-cup-on-a-hand_45329">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cooking10"></div>
+		<div class="class-name">.flaticon-cooking10</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cooking-roller-silhouette_45298">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cooking11"></div>
+		<div class="class-name">.flaticon-cooking11</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cooking-bowl-wih-cover_45334">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cooking12"></div>
+		<div class="class-name">.flaticon-cooking12</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cooking-recipes-book_45434">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cooking13"></div>
+		<div class="class-name">.flaticon-cooking13</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cooking-recipes-book-with-a-fork-and-a-spoon-in-cross-on-the-cover_45502">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cooking14"></div>
+		<div class="class-name">.flaticon-cooking14</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cooking-container-with-cover_45561">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cooking15"></div>
+		<div class="class-name">.flaticon-cooking15</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cooking-on-fire_45575">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cooking16"></div>
+		<div class="class-name">.flaticon-cooking16</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cooking-pan-and-cutlery-set_45594">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cooking17"></div>
+		<div class="class-name">.flaticon-cooking17</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cooking-pot-with-cover_45596">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cooking18"></div>
+		<div class="class-name">.flaticon-cooking18</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cooking-accessories-set-of-three-pieces_45606">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cooking19"></div>
+		<div class="class-name">.flaticon-cooking19</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cooking-bowl_45686">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cooking8"></div>
+		<div class="class-name">.flaticon-cooking8</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cooking-bowl-for-kitchen_45217">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cooking9"></div>
+		<div class="class-name">.flaticon-cooking9</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cooking-accessory-for-kitchen_45251">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-covered16"></div>
+		<div class="class-name">.flaticon-covered16</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/covered-food-tray-on-a-hand-of-hotel-room-service_45428">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-covered17"></div>
+		<div class="class-name">.flaticon-covered17</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/covered-pan-on-fire_45581">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-covered18"></div>
+		<div class="class-name">.flaticon-covered18</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/covered-plate-of-food_45652">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-covered19"></div>
+		<div class="class-name">.flaticon-covered19</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/covered-kitchen-bowl_45711">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cup37"></div>
+		<div class="class-name">.flaticon-cup37</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cup-with-hot-drink_45247">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cup38"></div>
+		<div class="class-name">.flaticon-cup38</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cup-with-hot-tea_45273">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cup39"></div>
+		<div class="class-name">.flaticon-cup39</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cup-black-shape-side-view_45577">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cup40"></div>
+		<div class="class-name">.flaticon-cup40</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cup-for-tea-or-coffee_45752">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery10"></div>
+		<div class="class-name">.flaticon-cutlery10</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery_45446">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery11"></div>
+		<div class="class-name">.flaticon-cutlery11</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery-set-on-a-plate_45455">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery12"></div>
+		<div class="class-name">.flaticon-cutlery12</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery-kitchen-set_45478">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery13"></div>
+		<div class="class-name">.flaticon-cutlery13</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery-kitchen-set_45505">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery14"></div>
+		<div class="class-name">.flaticon-cutlery14</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery-cross-of-a-knife-and-a-spoon_45507">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery15"></div>
+		<div class="class-name">.flaticon-cutlery15</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery-set-on-a-plate_45551">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery16"></div>
+		<div class="class-name">.flaticon-cutlery16</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery-set-of-five-pieces_45554">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery17"></div>
+		<div class="class-name">.flaticon-cutlery17</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery_45562">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery18"></div>
+		<div class="class-name">.flaticon-cutlery18</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery-pieces-on-a-circular-plate-from-top-view_45564">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery19"></div>
+		<div class="class-name">.flaticon-cutlery19</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery-symbol_45591">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery1"></div>
+		<div class="class-name">.flaticon-cutlery1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery-cross-couple-of-fork-and-spoon_45200">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery20"></div>
+		<div class="class-name">.flaticon-cutlery20</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery-on-circular-plate_45671">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery21"></div>
+		<div class="class-name">.flaticon-cutlery21</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery_45729">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery2"></div>
+		<div class="class-name">.flaticon-cutlery2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery-for-fish_45226">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery3"></div>
+		<div class="class-name">.flaticon-cutlery3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery_45232">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery4"></div>
+		<div class="class-name">.flaticon-cutlery4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery-set-of-three-pieces_45243">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery5"></div>
+		<div class="class-name">.flaticon-cutlery5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery-set-on-a-plate_45280">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery6"></div>
+		<div class="class-name">.flaticon-cutlery6</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/restaurant-cutlery-circular-symbol-of-a-spoon-and-a-fork-in-a-circle_45332">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery7"></div>
+		<div class="class-name">.flaticon-cutlery7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery-set_45388">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery8"></div>
+		<div class="class-name">.flaticon-cutlery8</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery-set-of-five-pieces_45420">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutlery9"></div>
+		<div class="class-name">.flaticon-cutlery9</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutlery-set-of-eating-tools_45438">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutting5"></div>
+		<div class="class-name">.flaticon-cutting5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutting-board-side-view-silhouettes-of-tools_45452">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutting6"></div>
+		<div class="class-name">.flaticon-cutting6</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutting-board-black-rectangular-silhouette-of-the-tool_45567">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-cutting7"></div>
+		<div class="class-name">.flaticon-cutting7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/cutting-tool-for-potatoes_45636">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-dessert1"></div>
+		<div class="class-name">.flaticon-dessert1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/desserts-recipes-book_45660">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-dessert2"></div>
+		<div class="class-name">.flaticon-dessert2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/dessert-glass-container-of-tall-elegant-shape_45698">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-drinks2"></div>
+		<div class="class-name">.flaticon-drinks2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/drinks-recipes-book_45614">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-electrical6"></div>
+		<div class="class-name">.flaticon-electrical6</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/electrical-kettle-tool-side-view_45224">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-elegant20"></div>
+		<div class="class-name">.flaticon-elegant20</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/elegant-glass-for-water_45204">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-elegant21"></div>
+		<div class="class-name">.flaticon-elegant21</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/elegant-black-wine-glass_45704">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-flat13"></div>
+		<div class="class-name">.flaticon-flat13</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/flat-cooking-bowl-from-side-view_45274">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-flat14"></div>
+		<div class="class-name">.flaticon-flat14</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/flat-covered-pan-kitchen-tool-for-cooking-from-side-view_45490">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-flat15"></div>
+		<div class="class-name">.flaticon-flat15</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/flat-plate-with-hot-food-from-side-view_45527">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-flat16"></div>
+		<div class="class-name">.flaticon-flat16</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/flat-cooking-pan_45576">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-flat17"></div>
+		<div class="class-name">.flaticon-flat17</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/flat-kitchen-bowl-to-cook-heating-the-food_45629">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-food27"></div>
+		<div class="class-name">.flaticon-food27</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/food-scale-tool_45327">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-fork23"></div>
+		<div class="class-name">.flaticon-fork23</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/fork-and-spoon-for-salad_45219">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-fork24"></div>
+		<div class="class-name">.flaticon-fork24</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/fork-of-long-and-thin-shape_45291">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-fork25"></div>
+		<div class="class-name">.flaticon-fork25</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/fork-eating-tool-silhouette-in-diagonal_45422">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-fork26"></div>
+		<div class="class-name">.flaticon-fork26</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/fork-in-diagonal_45433">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-fork27"></div>
+		<div class="class-name">.flaticon-fork27</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/fork-and-knife-in-cross_45552">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-fork28"></div>
+		<div class="class-name">.flaticon-fork28</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/fork-and-knife-cutlery-circle-interface-symbol-for-restaurant_45605">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-fork29"></div>
+		<div class="class-name">.flaticon-fork29</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/fork-for-dessert_45749">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-forks1"></div>
+		<div class="class-name">.flaticon-forks1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/forks-for-meat_45585">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-forks2"></div>
+		<div class="class-name">.flaticon-forks2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/forks_45598">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-forks"></div>
+		<div class="class-name">.flaticon-forks</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/forks-set-for-kitchen_45497">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-four64"></div>
+		<div class="class-name">.flaticon-four64</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/four-cooking-accessories-set-for-kitchen_45263">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-frying"></div>
+		<div class="class-name">.flaticon-frying</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/frying-pan-silhouette-from-top-view_45293">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-glass28"></div>
+		<div class="class-name">.flaticon-glass28</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/glass_45211">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-glass29"></div>
+		<div class="class-name">.flaticon-glass29</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/glass-black-tool_45262">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-glass30"></div>
+		<div class="class-name">.flaticon-glass30</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/glass_45264">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-glass31"></div>
+		<div class="class-name">.flaticon-glass31</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/glass-black-drinking-tool_45283">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-glass32"></div>
+		<div class="class-name">.flaticon-glass32</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/glass-elegant-black-shape_45410">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-glass33"></div>
+		<div class="class-name">.flaticon-glass33</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/glass_45512">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-glass34"></div>
+		<div class="class-name">.flaticon-glass34</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/glass-black-shape-from-side-view_45513">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-glass35"></div>
+		<div class="class-name">.flaticon-glass35</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/glass-with-beverage-ice-cubes-and-straw_45565">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-glass36"></div>
+		<div class="class-name">.flaticon-glass36</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/glass-of-wine_45608">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-glass37"></div>
+		<div class="class-name">.flaticon-glass37</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/glass-for-flowers_45640">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-glass39"></div>
+		<div class="class-name">.flaticon-glass39</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/glass-black-side-view-shape_45723">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-glass40"></div>
+		<div class="class-name">.flaticon-glass40</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/glass-on-a-hand_45741">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-glass41"></div>
+		<div class="class-name">.flaticon-glass41</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/glass-shape_45748">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-grinder3"></div>
+		<div class="class-name">.flaticon-grinder3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/grinder-for-meat_45453">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-heating5"></div>
+		<div class="class-name">.flaticon-heating5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/heating-food-in-flat-pan-on-fire_45500">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-hot54"></div>
+		<div class="class-name">.flaticon-hot54</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hot-food-bowl_45419">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-hot55"></div>
+		<div class="class-name">.flaticon-hot55</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hot-coffee-cup-with-spoon-in-it_45435">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-hot56"></div>
+		<div class="class-name">.flaticon-hot56</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hot-food-in-a-bowl_45471">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-hot57"></div>
+		<div class="class-name">.flaticon-hot57</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hot-recipes-kitchen-book_45480">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-hot58"></div>
+		<div class="class-name">.flaticon-hot58</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/hot-food-in-open-bowl_45546">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-ice52"></div>
+		<div class="class-name">.flaticon-ice52</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/ice-cream-balls-on-tall-glass_45685">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-jar15"></div>
+		<div class="class-name">.flaticon-jar15</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/jar_45635">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen19"></div>
+		<div class="class-name">.flaticon-kitchen19</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-forceps-silhouette-in-diagonal-position_45230">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen20"></div>
+		<div class="class-name">.flaticon-kitchen20</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-bowl_45242">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen21"></div>
+		<div class="class-name">.flaticon-kitchen21</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-accessory-in-diagonal-position_45276">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen22"></div>
+		<div class="class-name">.flaticon-kitchen22</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-accessory-for-cake_45294">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen23"></div>
+		<div class="class-name">.flaticon-kitchen23</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-apron-and-glove_45314">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen24"></div>
+		<div class="class-name">.flaticon-kitchen24</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-pan-with-cover_45335">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen25"></div>
+		<div class="class-name">.flaticon-kitchen25</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-hammer-silhouette_45339">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen26"></div>
+		<div class="class-name">.flaticon-kitchen26</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-accessory_45345">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen27"></div>
+		<div class="class-name">.flaticon-kitchen27</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-mixer_45354">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen28"></div>
+		<div class="class-name">.flaticon-kitchen28</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-utensil-to-cook-hot-food_45384">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen29"></div>
+		<div class="class-name">.flaticon-kitchen29</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-pan-with-cover_45403">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen30"></div>
+		<div class="class-name">.flaticon-kitchen30</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-bowl-for-cooking-with-cover_45425">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen31"></div>
+		<div class="class-name">.flaticon-kitchen31</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-glove_45460">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen32"></div>
+		<div class="class-name">.flaticon-kitchen32</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-set-for-cake_45463">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen33"></div>
+		<div class="class-name">.flaticon-kitchen33</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-accessory-silhouette-in-diagonal_45464">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen34"></div>
+		<div class="class-name">.flaticon-kitchen34</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-utensil_45470">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen35"></div>
+		<div class="class-name">.flaticon-kitchen35</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-accessory_45499">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen36"></div>
+		<div class="class-name">.flaticon-kitchen36</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-utensil-for-salt_45516">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen37"></div>
+		<div class="class-name">.flaticon-kitchen37</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-pan-with-cover-for-heat_45523">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen38"></div>
+		<div class="class-name">.flaticon-kitchen38</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-accessory-for-cheese_45525">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen39"></div>
+		<div class="class-name">.flaticon-kitchen39</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-opened-pan-tool_45528">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen40"></div>
+		<div class="class-name">.flaticon-kitchen40</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-bowl-with-cover_45574">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen41"></div>
+		<div class="class-name">.flaticon-kitchen41</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-scale-tool_45589">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen42"></div>
+		<div class="class-name">.flaticon-kitchen42</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-ax_45628">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen43"></div>
+		<div class="class-name">.flaticon-kitchen43</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-accessory_45664">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen44"></div>
+		<div class="class-name">.flaticon-kitchen44</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-accessory-silhouette_45680">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen45"></div>
+		<div class="class-name">.flaticon-kitchen45</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-accessory_45701">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-kitchen46"></div>
+		<div class="class-name">.flaticon-kitchen46</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/kitchen-wheel-accessory-for-cutting_45737">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-knife16"></div>
+		<div class="class-name">.flaticon-knife16</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/knife-silhouette-in-diagonal-position_45228">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-knife17"></div>
+		<div class="class-name">.flaticon-knife17</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/knife-of-thin-shape-in-diagonal-position_45239">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-knife18"></div>
+		<div class="class-name">.flaticon-knife18</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/knife-long-thin-cutting-tool-silhouette_45290">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-knife19"></div>
+		<div class="class-name">.flaticon-knife19</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/knife-on-cutting-board_45296">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-knife20"></div>
+		<div class="class-name">.flaticon-knife20</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/knife-for-pizza-with-a-wheel-of-metal_45338">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-knife21"></div>
+		<div class="class-name">.flaticon-knife21</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/knife_45364">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-knife22"></div>
+		<div class="class-name">.flaticon-knife22</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/knife-and-fork-in-a-square-for-interface-symbol-for-restaurants_45426">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-knife23"></div>
+		<div class="class-name">.flaticon-knife23</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/knife-tool_45517">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-knife24"></div>
+		<div class="class-name">.flaticon-knife24</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/knife-black-diagonal-tool-silhouette_45526">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-knife25"></div>
+		<div class="class-name">.flaticon-knife25</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/knife-diagonal-tool-silhouette_45536">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-knife26"></div>
+		<div class="class-name">.flaticon-knife26</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/knife-cutting-tool_45658">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-knives1"></div>
+		<div class="class-name">.flaticon-knives1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/knives-cross_45450">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-knives2"></div>
+		<div class="class-name">.flaticon-knives2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/knives-set-silhouette_45570">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-knives"></div>
+		<div class="class-name">.flaticon-knives</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/knives-cutlery-set-for-kitchen_45253">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-long36"></div>
+		<div class="class-name">.flaticon-long36</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/long-thin-spoon-for-kitchen_45483">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-meat7"></div>
+		<div class="class-name">.flaticon-meat7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/meat-recipes-book_45306">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-meat8"></div>
+		<div class="class-name">.flaticon-meat8</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/meat-recipes-book_45318">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-microwave2"></div>
+		<div class="class-name">.flaticon-microwave2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/microwave-oven_45623">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-mixer3"></div>
+		<div class="class-name">.flaticon-mixer3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/mixer-kitchen-machine_45214">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-mixer4"></div>
+		<div class="class-name">.flaticon-mixer4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/mixer-kitchen-tool-side-view_45539">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-mixer5"></div>
+		<div class="class-name">.flaticon-mixer5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/mixer_45702">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-mixing1"></div>
+		<div class="class-name">.flaticon-mixing1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/mixing-machine_45740">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-opener1"></div>
+		<div class="class-name">.flaticon-opener1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/opener-for-wine-bottles_45599">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-opener"></div>
+		<div class="class-name">.flaticon-opener</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/opener-in-diagonal-position_45231">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-oven4"></div>
+		<div class="class-name">.flaticon-oven4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/oven-kitchen-tool-for-cooking-foods_45442">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-pitcher4"></div>
+		<div class="class-name">.flaticon-pitcher4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pitcher-or-teapot-side-view_45322">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-pitcher5"></div>
+		<div class="class-name">.flaticon-pitcher5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pitcher-kitchen-utensil-with-liquid-inside_45404">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-pitcher6"></div>
+		<div class="class-name">.flaticon-pitcher6</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pitcher-or-tea-pot_45444">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-pitcher7"></div>
+		<div class="class-name">.flaticon-pitcher7</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pitcher_45558">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-pitcher8"></div>
+		<div class="class-name">.flaticon-pitcher8</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/pitcher-kitchen-container-for-liquids-measuring_45727">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-plate10"></div>
+		<div class="class-name">.flaticon-plate10</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/plate-glass-and-napkin-from-top-view_45336">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-plate11"></div>
+		<div class="class-name">.flaticon-plate11</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/plate-and-forks-couple-from-top-view_45430">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-plate12"></div>
+		<div class="class-name">.flaticon-plate12</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/plate-and-cutlery-from-top-view_45448">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-plate13"></div>
+		<div class="class-name">.flaticon-plate13</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/plate-with-fork-and-knife-eating-set-tools-from-top-view_45531">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-plate14"></div>
+		<div class="class-name">.flaticon-plate14</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/plate-circles-from-top-view_45534">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-plate15"></div>
+		<div class="class-name">.flaticon-plate15</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/plate-gross-circle_45665">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-plate16"></div>
+		<div class="class-name">.flaticon-plate16</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/plate-with-cutlery-and-glass-from-top-view_45779">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-plate8"></div>
+		<div class="class-name">.flaticon-plate8</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/plate-of-food_45198">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-plate9"></div>
+		<div class="class-name">.flaticon-plate9</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/plate-with-glass-and-cutlery-from-top-view_45277">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-potatoes"></div>
+		<div class="class-name">.flaticon-potatoes</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/potatoes-cutting-tool_45541">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-recipes1"></div>
+		<div class="class-name">.flaticon-recipes1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/recipes-book-kitchen-guide_45544">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-recipes"></div>
+		<div class="class-name">.flaticon-recipes</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/recipes-book-with-spaghetti-plate-on-the-cover_45295">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-refrigerator3"></div>
+		<div class="class-name">.flaticon-refrigerator3</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/refrigerator_45705">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-restaurant25"></div>
+		<div class="class-name">.flaticon-restaurant25</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/restaurant-cutlery-circular-interface-symbol-with-a-knife-and-a-spoon_45260">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-restaurant26"></div>
+		<div class="class-name">.flaticon-restaurant26</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/restaurant-eating-tools-set-of-three-pieces_45266">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-restaurant27"></div>
+		<div class="class-name">.flaticon-restaurant27</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/restaurant-square-interface-symbol-with-a-knife-and-a-spoon_45409">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-restaurant28"></div>
+		<div class="class-name">.flaticon-restaurant28</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/restaurant-cutlery-symbol-in-a-square_45586">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-restaurant29"></div>
+		<div class="class-name">.flaticon-restaurant29</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/restaurant-plate-top-view_45654">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-rounded44"></div>
+		<div class="class-name">.flaticon-rounded44</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/rounded-bowl_45310">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-salty"></div>
+		<div class="class-name">.flaticon-salty</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/salty-food-in-a-bowl_45521">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-sauce2"></div>
+		<div class="class-name">.flaticon-sauce2</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sauce-container-silhouette_45687">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-saucepan"></div>
+		<div class="class-name">.flaticon-saucepan</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/saucepan-from-side-view_45303">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-scoop1"></div>
+		<div class="class-name">.flaticon-scoop1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/scoop-of-egg-shape_45437">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-scoops"></div>
+		<div class="class-name">.flaticon-scoops</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/scoops-couple_45778">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-scoop"></div>
+		<div class="class-name">.flaticon-scoop</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/scoop-kitchen-utensil_45396">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-serving1"></div>
+		<div class="class-name">.flaticon-serving1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/serving-tea-in-a-cup-from-a-teapot_45621">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-serving"></div>
+		<div class="class-name">.flaticon-serving</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/serving-wine-in-a-glass-with-a-bottle_45394">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-silhouette9"></div>
+		<div class="class-name">.flaticon-silhouette9</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/silhouette-of-kitchen-tool-for-pepper_45447">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-skewer"></div>
+		<div class="class-name">.flaticon-skewer</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/skewer_45297">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-skimmer1"></div>
+		<div class="class-name">.flaticon-skimmer1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/skimmer_45520">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-soup4"></div>
+		<div class="class-name">.flaticon-soup4</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/soup-hot-bowl-with-spoon_45461">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-soup5"></div>
+		<div class="class-name">.flaticon-soup5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/soup-bucket_45709">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-spoon10"></div>
+		<div class="class-name">.flaticon-spoon10</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/spoon-for-cream_45566">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-spoons1"></div>
+		<div class="class-name">.flaticon-spoons1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/spoons-and-forks-of-kitchen_45550">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-spoons"></div>
+		<div class="class-name">.flaticon-spoons</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/spoons-and-skewer-long-kitchen-utensils_45473">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-strainer"></div>
+		<div class="class-name">.flaticon-strainer</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/strainer-kitchen-bowl-with-holes_45672">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-sweet8"></div>
+		<div class="class-name">.flaticon-sweet8</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/sweet-recipes-opened-cooking-book_45351">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-tall18"></div>
+		<div class="class-name">.flaticon-tall18</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/tall-elegant-glass-shape_45333">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-tall19"></div>
+		<div class="class-name">.flaticon-tall19</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/tall-kitchen-pan-with-cover_45481">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-tall20"></div>
+		<div class="class-name">.flaticon-tall20</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/tall-alcohol-glass_45595">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-tall21"></div>
+		<div class="class-name">.flaticon-tall21</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/tall-cup-with-straw-and-spoon-inside_45607">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-tea12"></div>
+		<div class="class-name">.flaticon-tea12</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/tea-set_45227">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-teapot5"></div>
+		<div class="class-name">.flaticon-teapot5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/teapot_45653">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-thin33"></div>
+		<div class="class-name">.flaticon-thin33</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/thin-long-spoon-kitchen-accessory_45408">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-thin34"></div>
+		<div class="class-name">.flaticon-thin34</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/thin-glasses-couple-for-celebration_45578">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-three107"></div>
+		<div class="class-name">.flaticon-three107</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/three-buckets-set-for-kitchen-of-different-sizes_45742">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-timer28"></div>
+		<div class="class-name">.flaticon-timer28</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/timer-kitchen-tool-of-egg-shape_45380">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-toaster5"></div>
+		<div class="class-name">.flaticon-toaster5</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/toaster_45482">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-toaster6"></div>
+		<div class="class-name">.flaticon-toaster6</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/toaster_45678">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-tool8"></div>
+		<div class="class-name">.flaticon-tool8</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/tool-for-soup_45485">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-two192"></div>
+		<div class="class-name">.flaticon-two192</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/two-plates-from-side-view_45632">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-vase"></div>
+		<div class="class-name">.flaticon-vase</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/vase_45457">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-whisk1"></div>
+		<div class="class-name">.flaticon-whisk1</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/whisk-kitchen-tool_45459">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-wine46"></div>
+		<div class="class-name">.flaticon-wine46</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/wine-bottle-and-opener_45630">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-wine47"></div>
+		<div class="class-name">.flaticon-wine47</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/wine-bottle_45637">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-wine48"></div>
+		<div class="class-name">.flaticon-wine48</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/wine-bottle_45643">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-wine49"></div>
+		<div class="class-name">.flaticon-wine49</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/wine-bottle_45646">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-wine50"></div>
+		<div class="class-name">.flaticon-wine50</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/wine-opener-silhouette_45691">Freepik</a></div></div><div class="glyph">
+		<div class="glyph-icon flaticon-wine51"></div>
+		<div class="class-name">.flaticon-wine51</div><div class="author-name">Author: <a href="http://www.flaticon.com/free-icon/wine-black-glass_45700">Freepik</a></div></div></section>
+
+<section class="attribution">
+
+	<div class="usetitle">License and attribution:</div><div class="attrDiv">Font generated by <a href="http://www.flaticon.com">flaticon.com</a>
+ under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY</a>. The authors are: <a href="http://www.freepik.com">Freepik</a>.</div><div class="usetitle">Copy the Attribution License:</div>
+
+<textarea onclick="this.focus();this.select();">Font generated by &lt;a href=&quot;http://www.flaticon.com&quot;&gt;flaticon.com&lt;/a&gt;
+ under &lt;a href=&quot;http://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY&lt;/a&gt;. The authors are: &lt;a href=&quot;http://www.freepik.com&quot;&gt;Freepik&lt;/a&gt;.</textarea>
+
+</section>
+
+<section class="iconsuse">
+    	<div class="usetitle">Examples:</div>
+		<div class="image"><p>&lt;i class=&quot;flaticon-apron1&quot;&gt;&lt;/i&gt; <i class="flaticon-apron1"></i></p><p>&lt;i class=&quot;flaticon-big97&quot;&gt;&lt;/i&gt; <i class="flaticon-big97"></i></p><p>&lt;i class=&quot;flaticon-black308&quot;&gt;&lt;/i&gt; <i class="flaticon-black308"></i></p><p>&lt;i class=&quot;flaticon-black310&quot;&gt;&lt;/i&gt; <i class="flaticon-black310"></i></p><p>&lt;i class=&quot;flaticon-black311&quot;&gt;&lt;/i&gt; <i class="flaticon-black311"></i></p></div><div class="image"><p>&lt;span class=&quot;flaticon-black313&quot;&gt;&lt;/span&gt; <span class="flaticon-black313"></span></p><p>&lt;span class=&quot;flaticon-black315&quot;&gt;&lt;/span&gt; <span class="flaticon-black315"></span></p><p>&lt;span class=&quot;flaticon-black316&quot;&gt;&lt;/span&gt; <span class="flaticon-black316"></span></p><p>&lt;span class=&quot;flaticon-black318&quot;&gt;&lt;/span&gt; <span class="flaticon-black318"></span></p><p>&lt;span class=&quot;flaticon-black323&quot;&gt;&lt;/span&gt; <span class="flaticon-black323"></span></p></div><div class="image"><p>&lt;span class=&quot;flaticon-black329&quot;&gt;&lt;/span&gt; <span class="flaticon-black329"></span></p><p>&lt;i class=&quot;flaticon-boiler1&quot;&gt;&lt;/i&gt; <i class="flaticon-boiler1"></i></p><p>&lt;i class=&quot;flaticon-bowl10&quot;&gt;&lt;/i&gt; <i class="flaticon-bowl10"></i></p><p>&lt;i class=&quot;flaticon-bowl11&quot;&gt;&lt;/i&gt; <i class="flaticon-bowl11"></i></p><p>&lt;i class=&quot;flaticon-bucket10&quot;&gt;&lt;/i&gt; <i class="flaticon-bucket10"></i></p></div><div class="image"><p>&lt;span class=&quot;flaticon-bucket11&quot;&gt;&lt;/span&gt; <span class="flaticon-bucket11"></span></p><p>&lt;span class=&quot;flaticon-bucket12&quot;&gt;&lt;/span&gt; <span class="flaticon-bucket12"></span></p><p>&lt;span class=&quot;flaticon-bucket9&quot;&gt;&lt;/span&gt; <span class="flaticon-bucket9"></span></p><p>&lt;span class=&quot;flaticon-buckets&quot;&gt;&lt;/span&gt; <span class="flaticon-buckets"></span></p><p>&lt;span class=&quot;flaticon-champagne4&quot;&gt;&lt;/span&gt; <span class="flaticon-champagne4"></span></p></div><div class="image"></div>
+</section>
+<div id="footer">
+    <div>Generated by <a href="http://www.flaticon.com">flaticon.com</a>
+    </div>
+</div>
+	</body>
+</html>
