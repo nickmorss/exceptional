@@ -203,6 +203,10 @@ body {
     &.xxlarge {
         background-color: $alert-color;
     }
+    &.show-grid {
+        background-color: transparent;
+        bottom: 0px;   
+    }
 }
 
 /* products */

@@ -4703,6 +4703,9 @@ body [class^="flaticon-"]:before, body [class*=" flaticon-"]:before, body [class
     background-color: #ffae00; }
   .debug.xxlarge {
     background-color: #ec5840; }
+  .debug.show-grid {
+    background-color: transparent;
+    bottom: 0px; }
 
 /* products */
 .product-cells {
