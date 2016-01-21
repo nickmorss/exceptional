@@ -6,6 +6,7 @@
 
 @include foundation-global-styles;
 @include foundation-grid;
+//@include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -42,6 +43,113 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+/* fonts */
+/*PortraitText Regular
+EuclidFlex
+EuclidFlexMedium
+PortraitText Medium*/
+
+@font-face {
+  font-family: 'Portrait';
+  src: url('../fonts/PortraitText-Regular-Web.eot');
+  src: url('../fonts/PortraitText-Regular-Web.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/PortraitText-Regular-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Euclid';
+  src: url('../fonts/EuclidFlex-Medium.otf')  format("opentype");
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.font-portrait {
+  font-family: 'Portrait';
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+.font-euclid {
+  font-family: 'Euclid';
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.row {
+/*    border-left: dashed 1px $medium-gray;
+    border-right: dashed 1px $medium-gray;*/
+}
+
+.navigation {
+    list-style-type: none;
+    text-align: center;
+    li {
+        display: inline;
+        margin: 0 20px;
+    }
+}
+
+.breadcrumb {
+    margin:0;
+    position: relative;
+    top: 20px;
+    list-style-type: none;
+    li {
+        display: inline; 
+    }
+    a {
+        color: #fff;
+    }    
+}
+
+.banner {
+    background-color: #000;
+    height: 300px;
+    color: #fff;
+    padding-top:20px;
+}
+
+.module-topic {
+  font-family: 'Portrait';
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 20px 0 0px 0;
+}
+.module-title {
+  font-family: 'Euclid';
+  font-weight:  200;
+  font-style:   normal;
+  font-stretch: normal;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0 0 40px;
+}
+.module-subtitle {
+  font-family: 'Euclid';
+  font-weight:  200;
+  font-style:   normal;
+  font-stretch: normal;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+.callout {
+    background-color: $light-gray;
+    border:none;
+}
+.callout-image {
+    margin: 40px 0 40px 0;
+}
+
 /* utilities */
 
 body {
@@ -52,12 +160,16 @@ body {
         font-size: 80px;
     }
     .icon-xlarge:before {
-        font-size: 120px;
+        font-size: 15vw;
     }
     .icon-xxlarge:before {
-        font-size: 200px;
+        font-size: 20vw;
+    }
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        margin-left: 0;
     }
 }
+
 
 
 .show-for-xlarge-only {
@@ -95,14 +207,65 @@ body {
 
 /* products */
 .product-cells {
-    border:solid 1px red;
-    list-style-type: none;
+    margin-bottom: 40px;
 }
 
 .product-cell {
-    border:solid 1px green;
-    width: 50%;
-    float: left;
+}
+
+.product-cell-badge {
+  font-family: 'Portrait';
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0px 0 0px 0;
+  color: $secondary-color;
+}
+.product-cell-brand {
+  font-family: 'Portrait';
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0px 0 0px 0;
+}
+.product-cell-name {
+  font-family: 'Euclid';
+  font-weight:  200;
+  font-style:   normal;
+  font-stretch: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  height: 4.7em;
+  overflow: hidden;
+}
+.product-cell-size {
+  font-family: 'Euclid';
+  font-weight:  200;
+  font-style:   normal;
+  font-stretch: normal;
+  font-size: 18px;
+  margin: 0;
+}
+.product-cell-price {
+  font-family: 'Portrait';
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 8px 0 40px 0;    
+}
+
+p {
+  font-family: 'Portrait';
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
 }
 
 
