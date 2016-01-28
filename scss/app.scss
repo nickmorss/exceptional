@@ -215,6 +215,9 @@ body {
 }
 
 .product-cell {
+    img {
+        width: 100%;
+    }
 }
 
 .product-cell-badge {
@@ -272,4 +275,25 @@ p {
   font-stretch: normal;
 }
 
+.slick-list {overflow: visible;}
+
+.slick-wrap {
+  padding: 0 10%;
+}
+
+.slick .slick-slide {
+  p {opacity: 0;}
+  &.slick-current {
+    p {
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+    }
+  }
+}
+
+.horiztonal-slick-wrap {
+  border:solid 1px red;
+  overflow: hidden;
+  height: 600px;
+}
 

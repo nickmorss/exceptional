@@ -4711,6 +4711,9 @@ body [class^="flaticon-"]:before, body [class*=" flaticon-"]:before, body [class
 .product-cells {
   margin-bottom: 40px; }
 
+.product-cell img {
+  width: 100%; }
+
 .product-cell-badge {
   font-family: 'Portrait';
   font-weight: 400;
@@ -4763,3 +4766,21 @@ p {
   font-weight: 500;
   font-style: normal;
   font-stretch: normal; }
+
+.slick-list {
+  overflow: visible; }
+
+.slick-wrap {
+  padding: 0 10%; }
+
+.slick .slick-slide p {
+  opacity: 0; }
+
+.slick .slick-slide.slick-current p {
+  opacity: 1;
+  transition: opacity 1s ease-in-out; }
+
+.horiztonal-slick-wrap {
+  border: solid 1px red;
+  overflow: hidden;
+  height: 600px; }
